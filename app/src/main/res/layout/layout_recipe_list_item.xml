@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/recipe_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recipe_image_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+
+        <TextView
+            android:id="@+id/recipe_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipe_image"
+            android:text="chicken"
+            android:textColor="#000"
+            android:textSize="@dimen/recipe_title_text_size" />
+
+
+        <TextView
+            android:id="@+id/recipe_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipe_title"
+            android:layout_alignParentStart="true"
+            android:gravity="start"
+            android:text="asmaa"
+            android:textSize="@dimen/recipe_publisher_text_size" />
+
+        <TextView
+            android:id="@+id/recipe_social_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipe_title"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="rank"
+            android:textColor="@color/red"
+            android:textSize="@dimen/recipe_publisher_text_size" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

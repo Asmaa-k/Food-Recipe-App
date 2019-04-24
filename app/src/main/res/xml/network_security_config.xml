@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">static.food2fork.com</domain>
+    </domain-config>
+</network-security-config>
+<!--
+cleartextTrafficPermitted (allow http request)
+includeSubdomains (allow the sub domain like fire base )
+
+dont forget to include it in manifest
+-->
